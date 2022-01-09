@@ -17,7 +17,7 @@
         </el-tooltip>
 
       </template>
-      <Notification/>
+      <!-- <Notification/> -->
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
@@ -53,7 +53,7 @@ import ErrorLog from '../../components/ErrorLog'
 import Screenfull from '../../components/Screenfull'
 import SizeSelect from '../../components/SizeSelect'
 import Search from '../../components/HeaderSearch'
-import Notification from '../../components/Notification'
+// import Notification from '../../components/Notification'
 export default {
   components: {
     Breadcrumb,
@@ -62,7 +62,7 @@ export default {
     Screenfull,
     SizeSelect,
     Search,
-    Notification
+    // Notification
   },
   computed: {
     ...mapGetters([

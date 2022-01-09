@@ -9,11 +9,10 @@ import "normalize.css/normalize.css"; // a modern alternative to CSS
 import "../imports/ui/styles/variables.scss";
 import "../imports/ui/styles/index.scss";
 import permission from "../imports/ui/directive/permission";
+import PermissionCheck from "../imports/ui/components/PermissionCheck";
 Vue.use(permission);
 Vue.use(BaseEnterProvider);
 Vue.component("permission-check", PermissionCheck);
-Vue.prototype.$baseComponents["base-option"] = BaseOption;
-Vue.prototype.$baseComponents["object-option"] = ObjectOption;
 function createApp() {
   return new Vue({
     el: "#app",

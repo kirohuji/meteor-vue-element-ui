@@ -1,12 +1,5 @@
-import Vue from 'vue'
-
-import '../imports/ui/plugins'
-
-import App from '../imports/ui/App.vue'
-
-Meteor.startup(() => {
-  new Vue({
-    el: '#app',
-    ...App,
-  })
+import { Meteor } from 'meteor/meteor'
+import createApp from './app'
+Meteor.startup(()=>{
+    createApp();
 })
